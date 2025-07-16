@@ -1,0 +1,37 @@
+.history-sidebar {
+  width: 230px;
+  background: var(--bg-secondary);
+  border-right: 1px solid var(--border-color);
+  padding: 1rem 1rem 0.5rem 1rem;
+  height: 100vh;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+.game-history-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.game-history-list li {
+  cursor: pointer;
+  padding: 0.65em 0.5em;
+  border-radius: 6px;
+  margin-bottom: 0.3em;
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.game-history-list li.selected {
+  background: var(--border-color);
+  font-weight: 600;
+}
+
+.game-date {
+  font-size: 0.84em;
+  color: var(--text-secondary);
+  margin-left: 0.5em;
+}

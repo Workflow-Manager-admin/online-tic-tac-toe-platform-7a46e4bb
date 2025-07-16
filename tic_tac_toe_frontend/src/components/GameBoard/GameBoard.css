@@ -1,0 +1,42 @@
+.game-board-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1em 0 2em;
+}
+
+.game-board {
+  display: grid;
+  grid-template-columns: repeat(3, 60px);
+  grid-template-rows: repeat(3, 60px);
+  gap: 6px;
+  background: var(--border-color);
+  border-radius: 10px;
+  box-shadow: 0 1px 8px rgba(0,0,0,0.04);
+}
+
+.cell {
+  font-size: 2.1rem;
+  font-family: inherit;
+  background: var(--bg-secondary);
+  border: 2px solid var(--border-color);
+  border-radius: 6px;
+  color: var(--text-primary);
+  transition: background 0.17s;
+  cursor: pointer;
+}
+.cell.occupied {
+  cursor: default;
+  opacity: 0.75;
+}
+
+.game-status {
+  margin-top: 1em;
+  font-size: 1.1rem;
+}
+.winner {
+  color: #14ba6d;
+}
+.draw {
+  color: #e87a41;
+}
