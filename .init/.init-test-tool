@@ -1,0 +1,4 @@
+{
+    "command": "npm run test",
+    "working_directory": "/tmp/kavia/workspace/code-generation/online-tic-tac-toe-platform-7a46e4bb/tic_tac_toe_frontend"
+}
